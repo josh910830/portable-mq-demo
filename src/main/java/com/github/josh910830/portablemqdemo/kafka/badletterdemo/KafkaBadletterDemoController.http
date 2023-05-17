@@ -1,2 +1,9 @@
 ### badletter-demo
 POST localhost/kafka/badletter-demo
+
+### find by topic
+GET localhost/portable-mq/badletter/
+    ?topic=kafka-badletter-demo
+
+### clear
+DELETE localhost/portable-mq/badletter/clear
