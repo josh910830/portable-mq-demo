@@ -1,0 +1,8 @@
+### demo
+POST localhost/kafka/demo
+
+### deadletter-demo
+POST localhost/kafka/deadletter-demo
+
+### badletter-demo
+POST localhost/kafka/badletter-demo
