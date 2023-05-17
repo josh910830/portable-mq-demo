@@ -2,11 +2,14 @@ spring:
   kafka:
     consumer:
       group-id: groupId
-      bootstrap-servers: localhost:9092
-    producer:
-      bootstrap-servers: localhost:9092
-    listener:
-      ack-mode: manual
+#      bootstrap-servers: localhost:9092
+#    producer:
+#      bootstrap-servers: localhost:9092
+#    listener:
+#      ack-mode: manual
 
 server:
   port: 80
+logging:
+  level:
+    com.github.josh910830: debug
