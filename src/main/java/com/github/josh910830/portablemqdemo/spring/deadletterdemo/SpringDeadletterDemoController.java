@@ -1,8 +1,6 @@
-package com.github.josh910830.portablemqdemo.controller;
+package com.github.josh910830.portablemqdemo.spring.deadletterdemo;
 
 import com.github.josh910830.portablemq.core.producer.PortableProducer;
-import com.github.josh910830.portablemqdemo.message.SpringDeadletterDemoMessage;
-import com.github.josh910830.portablemqdemo.message.SpringDemoMessage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,16 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/spring")
 @RequiredArgsConstructor
-public class SpringDemoController {
+public class SpringDeadletterDemoController {
 
-    private final PortableProducer<SpringDemoMessage> demoMessageProducer;
     private final PortableProducer<SpringDeadletterDemoMessage> deadletterDemoMessageProducer;
-
-    @PostMapping("/demo")
-    public void demo() {
-        log.info("demo");
-        demoMessageProducer.produce(new SpringDemoMessage("demo"));
-    }
 
     @PostMapping("/deadletter-demo")
     public void deadletterDemo() {

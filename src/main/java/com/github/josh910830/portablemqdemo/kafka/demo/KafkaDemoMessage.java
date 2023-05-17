@@ -1,4 +1,4 @@
-package com.github.josh910830.portablemqdemo.message;
+package com.github.josh910830.portablemqdemo.kafka.demo;
 
 import com.github.josh910830.portablemq.core.message.Message;
 import lombok.AllArgsConstructor;

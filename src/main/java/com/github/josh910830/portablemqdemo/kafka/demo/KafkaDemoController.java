@@ -1,7 +1,6 @@
-package com.github.josh910830.portablemqdemo.controller;
+package com.github.josh910830.portablemqdemo.kafka.demo;
 
 import com.github.josh910830.portablemq.core.producer.PortableProducer;
-import com.github.josh910830.portablemqdemo.message.KafkaDemoMessage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;

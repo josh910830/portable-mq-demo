@@ -1,3 +1,6 @@
+### deadletter-demo
+POST localhost/spring/deadletter-demo
+
 ### find not redriven
 GET localhost/portable-mq/deadletter/
     ?redriven=false

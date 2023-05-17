@@ -1,14 +1,13 @@
-package com.github.josh910830.portablemqdemo.consumer;
+package com.github.josh910830.portablemqdemo.kafka.demo;
 
 import com.github.josh910830.portablemq.core.consumer.Consume;
 import com.github.josh910830.portablemq.core.consumer.Consumer;
 import com.github.josh910830.portablemq.kafka.consumer.Handle;
-import com.github.josh910830.portablemqdemo.message.KafkaDemoMessage;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.support.Acknowledgment;
 
-import static com.github.josh910830.portablemqdemo.topic.Topics.KAFKA_DEMO;
+import static com.github.josh910830.portablemqdemo.Topics.KAFKA_DEMO;
 
 @Slf4j
 @Consumer

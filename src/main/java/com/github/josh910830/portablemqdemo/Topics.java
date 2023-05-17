@@ -1,4 +1,4 @@
-package com.github.josh910830.portablemqdemo.topic;
+package com.github.josh910830.portablemqdemo;
 
 public interface Topics {
 
