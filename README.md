@@ -31,7 +31,7 @@ Test with `http` in each package.
 
 ### Redis
 
-- ConsumptionLogStore
+- [ConsumptionLogStore](./src/main/java/com/github/josh910830/portablemqdemo/adapter/redis)
 
 ### Property
 

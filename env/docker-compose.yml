@@ -30,3 +30,10 @@ services:
       POSTGRES_DB: database
       POSTGRES_USER: "username"
       POSTGRES_PASSWORD: "password"
+
+  redis:
+    container_name: redis
+    image: redis:7.0.8
+    ports:
+      - "6379:6379"
+    restart: always
