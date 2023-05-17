@@ -16,8 +16,8 @@ public class SpringDemoController {
     private final PortableProducer<SpringDemoMessage> demoMessageProducer;
 
     @PostMapping("/demo")
-    public void demo() {
-        log.info("demo");
+    public void post() {
+        log.info("post");
         demoMessageProducer.produce(new SpringDemoMessage("demo"));
     }
 

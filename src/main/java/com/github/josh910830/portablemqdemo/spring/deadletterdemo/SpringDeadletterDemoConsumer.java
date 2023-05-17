@@ -16,7 +16,7 @@ public class SpringDeadletterDemoConsumer {
 
     @Consume
     @SpringListener(topic = SPRING_DEADLETTER_DEMO)
-    public void deadletterDemo(SpringDeadletterDemoMessage message) {
+    public void consume(SpringDeadletterDemoMessage message) {
         log.info("consume {}", message);
         toggle.push();
     }

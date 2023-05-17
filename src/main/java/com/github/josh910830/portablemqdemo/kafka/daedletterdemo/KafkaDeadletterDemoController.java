@@ -1,4 +1,4 @@
-package com.github.josh910830.portablemqdemo.spring.deadletterdemo;
+package com.github.josh910830.portablemqdemo.kafka.daedletterdemo;
 
 import com.github.josh910830.portablemq.core.producer.PortableProducer;
 import lombok.RequiredArgsConstructor;
@@ -7,18 +7,20 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.UUID;
+
 @Slf4j
 @RestController
-@RequestMapping("/spring")
+@RequestMapping("/kafka")
 @RequiredArgsConstructor
-public class SpringDeadletterDemoController {
+public class KafkaDeadletterDemoController {
 
-    private final PortableProducer<SpringDeadletterDemoMessage> deadletterDemoMessageProducer;
+    private final PortableProducer<KafkaDeadletterDemoMessage> deadletterDemoMessageProducer;
 
     @PostMapping("/deadletter-demo")
     public void post() {
         log.info("post");
-        deadletterDemoMessageProducer.produce(new SpringDeadletterDemoMessage("deadletter-demo"));
+        deadletterDemoMessageProducer.produce(new KafkaDeadletterDemoMessage(UUID.randomUUID().toString(), "deadletter-demo"));
     }
 
 }

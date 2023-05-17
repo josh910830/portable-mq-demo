@@ -18,19 +18,9 @@ public class KafkaDemoController {
     private final PortableProducer<KafkaDemoMessage> demoMessageProducer;
 
     @PostMapping("/demo")
-    public void demo() {
-        log.info("demo");
+    public void post() {
+        log.info("post");
         demoMessageProducer.produce(new KafkaDemoMessage(UUID.randomUUID().toString(), "demo"));
-    }
-
-    @PostMapping("/deadletter-demo")
-    public void deadletterDemo() {
-        log.info("deadletterDemo");
-    }
-
-    @PostMapping("/badletter-demo")
-    public void badletterDemo() {
-        log.info("badletterDemo");
     }
 
 }

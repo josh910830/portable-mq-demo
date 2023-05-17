@@ -13,7 +13,7 @@ public class SpringDemoConsumer {
 
     @Consume
     @SpringListener(topic = SPRING_DEMO)
-    public void demo(SpringDemoMessage message) {
+    public void consume(SpringDemoMessage message) {
         log.info("consume {}", message);
     }
 
