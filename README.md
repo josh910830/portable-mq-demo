@@ -27,7 +27,7 @@ Test with `http` in each package.
 
 ### Postgres
 
-- DeadletterStore
+- [DeadletterStore](./src/main/java/com/github/josh910830/portablemqdemo/adapter/postgres)
 
 ### Redis
 

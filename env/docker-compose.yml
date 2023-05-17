@@ -19,3 +19,14 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+
+  postgres:
+    container_name: postgres
+    image: postgres:15.1
+    ports:
+      - "5432:5432"
+    restart: always
+    environment:
+      POSTGRES_DB: database
+      POSTGRES_USER: "username"
+      POSTGRES_PASSWORD: "password"

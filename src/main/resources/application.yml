@@ -8,6 +8,19 @@ spring:
     listener:
       ack-mode: manual
 
+  datasource:
+    url: jdbc:postgresql://localhost:5432/database
+    username: username
+    password: password
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
 server:
   port: 80
 logging:
