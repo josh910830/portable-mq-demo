@@ -13,7 +13,7 @@ public class LogDeadletterNotifier extends DeadletterLinkNotifier {
     @NotNull
     @Override
     protected String getServerAddress() {
-        return "localhost";
+        return "http://localhost";
     }
 
     @Override
