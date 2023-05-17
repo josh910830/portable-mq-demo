@@ -1,17 +1,16 @@
 package com.github.josh910830.portablemqdemo.spring.demo;
 
-import com.github.josh910830.portablemq.core.message.IdentifiableMessage;
-import lombok.Getter;
-import lombok.ToString;
+import com.github.josh910830.portablemq.core.message.Message;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@ToString
-public class SpringDemoMessage extends IdentifiableMessage {
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class SpringDemoMessage implements Message {
 
-    @Getter
-    private final String content;
-
-    public SpringDemoMessage(String content) {
-        this.content = content;
-    }
+    private String id;
+    private String content;
 
 }

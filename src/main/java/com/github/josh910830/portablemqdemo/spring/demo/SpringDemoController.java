@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.UUID;
+
 @Slf4j
 @RestController
 @RequestMapping("/spring")
@@ -18,7 +20,7 @@ public class SpringDemoController {
     @PostMapping("/demo")
     public void post() {
         log.info("post");
-        demoMessageProducer.produce(new SpringDemoMessage("demo"));
+        demoMessageProducer.produce(new SpringDemoMessage(UUID.randomUUID().toString(), "demo"));
     }
 
 }

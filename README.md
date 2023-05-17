@@ -35,8 +35,8 @@ Test with `http` in each package.
 
 ### Property
 
-- RedriveTokenManager
+- [RedriveTokenManager](./src/main/java/com/github/josh910830/portablemqdemo/adapter/property)
 
 ### Log
 
-- DeadletterNotifier
+- [DeadletterNotifier](./src/main/java/com/github/josh910830/portablemqdemo/adapter/log)

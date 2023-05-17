@@ -21,6 +21,8 @@ spring:
         show_sql: true
         format_sql: true
 
+token: token
+
 server:
   port: 80
 logging:
